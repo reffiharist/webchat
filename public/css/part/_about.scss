@@ -1,0 +1,80 @@
+#about{
+	padding: 100px 0;
+}
+.img-about{
+	position: relative;
+	&:before{
+		position: absolute;
+		content: '';
+		top: 35px;
+		left: -35px;
+		width: 100%;
+		height: 100%;
+		border-radius: 25px;
+		
+		background: rgba(255,96,47,1);
+		background: -moz-linear-gradient(top, rgba(255,96,47,1) 0%, rgba(35,50,89,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,96,47,1)), color-stop(100%, rgba(35,50,89,1)));
+		background: -webkit-linear-gradient(top, rgba(255,96,47,1) 0%, rgba(35,50,89,1) 100%);
+		background: -o-linear-gradient(top, rgba(255,96,47,1) 0%, rgba(35,50,89,1) 100%);
+		background: -ms-linear-gradient(top, rgba(255,96,47,1) 0%, rgba(35,50,89,1) 100%);
+		background: linear-gradient(to bottom, rgba(255,96,47,1) 0%, rgba(35,50,89,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff602f', endColorstr='#233259', GradientType=0 );
+	}
+	img{
+		position: relative;
+		width: 100%;
+		border-radius: 25px;
+		z-index: 2;
+	}
+}
+
+.content-about{
+	padding-left: 50px;
+	h4{
+		margin-bottom: 10px;
+		font-size: 18px;
+		color: $third_color;
+	}
+	h2{
+		margin-bottom: 30px;
+		font-size: 48px;
+	}
+	>p{
+		color: #19274d;
+		line-height: 28px;
+	}
+	ul{
+		margin-top: 40px;
+		li{
+			position: relative;
+			padding-left: 70px;
+			margin-bottom: 30px;
+			color: #19274d;
+			&::before{
+				@include flexbox();
+				@include justify-content(center);
+				@include align-items(center);
+				position: absolute;
+				content: '\F633';
+				left: 0;
+				width: 50px;
+				height: 50px;
+				font-family: "bootstrap-icons";
+				font-size: 28px;
+				color: $third_color;
+				background: lighten($third_color, 30%);
+				border-radius: 50%;
+			}
+			h3{
+				margin-bottom: 10px;
+				font-size: 18px;
+				font-weight: 600;
+			}
+			p{
+				color: #19274d;
+				line-height: 28px;
+			}
+		}
+	}
+}

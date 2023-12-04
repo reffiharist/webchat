@@ -1,0 +1,31 @@
+#feature{
+	padding: 100px 0;
+}
+.wrap-feature{
+	@include flexbox();
+	@include flex-wrap(wrap);
+	gap: 30px;
+	margin-top: 50px;
+}
+.item-feature{
+	padding: 30px;
+	width: calc(calc(100% / 3) - 20px);
+	border: 1px solid rgba(#ddd, .5);
+}
+.icon-feature{
+	margin-bottom: 15px;
+	color: $second_color;
+	.bi{
+		font-size: 32px;
+	}
+}
+.content-feature{
+	h3{
+		margin-bottom: 8px;
+		font-size: 18px;
+	}
+	p{
+		margin-bottom: 0;
+		line-height: 26px;
+	}
+}

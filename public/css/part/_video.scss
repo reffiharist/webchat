@@ -1,0 +1,193 @@
+#video{
+	padding: 100px 0;
+	background: url('../images/map-grey.png') no-repeat;
+	background-size: 80%;
+	background-position: center 70%;
+}
+
+.content-video{
+	margin-top: 70px;
+}
+
+.img-video{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 700px;
+	&::before{
+		position: absolute;
+		content: '';
+		top: -25px;
+		right: -25px;
+		width: 100px;
+		height: 100px;
+		background: transparent;
+		background-image: radial-gradient(circle at 1px 1px, #ddd 1px, transparent 0);
+		background-size: 5px 5px;
+		animation: shapescale 4s linear infinite;
+	}
+	&::after{
+		position: absolute;
+		content: '';
+		bottom: -35px;
+		left: -35px;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: transparent;
+		background-image: radial-gradient(circle at 1px 1px, #ddd 1px, transparent 0);
+		background-size: 5px 5px;
+		animation: shapescale 4s linear infinite;
+	}
+	img{
+		position: relative;
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+.button-play{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include flexbox();
+	@include justify-content(center);
+	@include align-items(center);
+	width: 70px;
+	height: 70px;
+	background: $third_color;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	&:hover{
+		background: $second_color;
+		&::before, &::after{
+			border-color: $second_color;
+		}
+	}
+	&::before, &::after{
+		content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+        border: 1px solid $third_color;
+        border-radius: 50%;
+        transition: 0.5s;
+	}
+	&::before{
+		animation: ripple 2s linear infinite;
+	}
+	&::after{
+		animation: ripple 2s linear 1s infinite;
+	}
+	.bi{
+		font-size: 42px;
+		color: #fff;
+	}
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1)
+    }
+    75% {
+        transform: scale(1.75);
+        opacity: 1
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+@keyframes shapescale {
+    0% {
+        transform: scale(1)
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.shape-video{
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1;
+    &::after{
+    	position: absolute;
+    	content: '';
+    	bottom: -30px;
+    	right: -30px;
+    	border-right: 70px solid $third_color;
+    	border-bottom: 70px solid $third_color;
+    	border-top: 70px solid transparent;
+    	border-left: 70px solid transparent;
+    }
+    &::before{
+    	position: absolute;
+    	content: '';
+    	bottom: -60px;
+    	right: -60px;
+    	border-right: 80px solid $second_color;
+    	border-bottom: 80px solid $second_color;
+    	border-top: 80px solid transparent;
+    	border-left: 80px solid transparent;
+    }
+}
+
+.contact-video{
+	@include flexbox();
+	@include justify-content(space-between);
+	@include align-items(center);
+	padding: 30px 50px;
+	margin: 0 auto;
+	margin-top: 120px;
+	width: 100%;
+	max-width: 700px;
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+}
+.content-contact-video{
+	h3{
+		font-size: 22px;
+	}
+	p{
+		margin-bottom: 0;
+		font-size: 15px;
+	}
+}
+.button-contact-video{
+	a{
+		background: $brand_color;
+		&:hover{
+			background: $third_color;
+			.bi{
+				color: #fff;
+			}
+		}
+		.bi{
+			margin-right: 5px;
+			color: $third_color;
+		}
+	}
+}

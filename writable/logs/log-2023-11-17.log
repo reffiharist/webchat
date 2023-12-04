@@ -1,0 +1,331 @@
+WARNING - 2023-11-17 09:39:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:46:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:46:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:46:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:46:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:46:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:47:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:47:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:47:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:47:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:47:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:47:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:48:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:48:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:49:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:49:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:49:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:49:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:50:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:50:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:50:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:50:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:50:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:50:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:50:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:51:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:51:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:51:19 --> Too few arguments to function App\Models\Datatable::get_datatables(), 1 passed in C:\xampp8\htdocs\webchat\app\Controllers\Backend\User.php on line 33 and at least 4 expected
+in APPPATH\Models\Datatable.php on line 52.
+ 1 APPPATH\Controllers\Backend\User.php(33): App\Models\Datatable->get_datatables([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Backend\User->dataList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\User))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:51:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:51:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:51:27 --> Too few arguments to function App\Models\Datatable::get_datatables(), 1 passed in C:\xampp8\htdocs\webchat\app\Controllers\Backend\User.php on line 33 and at least 4 expected
+in APPPATH\Models\Datatable.php on line 52.
+ 1 APPPATH\Controllers\Backend\User.php(33): App\Models\Datatable->get_datatables([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Backend\User->dataList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\User))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:51:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:51:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:51:29 --> Too few arguments to function App\Models\Datatable::get_datatables(), 1 passed in C:\xampp8\htdocs\webchat\app\Controllers\Backend\User.php on line 33 and at least 4 expected
+in APPPATH\Models\Datatable.php on line 52.
+ 1 APPPATH\Controllers\Backend\User.php(33): App\Models\Datatable->get_datatables([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Backend\User->dataList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\User))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:51:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:51:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:51:44 --> Too few arguments to function App\Models\Datatable::get_datatables(), 1 passed in C:\xampp8\htdocs\webchat\app\Controllers\Backend\User.php on line 33 and at least 4 expected
+in APPPATH\Models\Datatable.php on line 52.
+ 1 APPPATH\Controllers\Backend\User.php(33): App\Models\Datatable->get_datatables([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Backend\User->dataList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\User))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:52:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:52:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:52:52 --> Undefined variable $request
+in APPPATH\Controllers\Backend\User.php on line 35.
+ 1 APPPATH\Controllers\Backend\User.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp8\\htdocs\\webchat\\app\\Controllers\\Backend\\User.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Backend\User->dataList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\User))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:53:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:53:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:53:32 --> Undefined property: stdClass::$user_username
+in APPPATH\Controllers\Backend\User.php on line 44.
+ 1 APPPATH\Controllers\Backend\User.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$user_username', 'C:\\xampp8\\htdocs\\webchat\\app\\Controllers\\Backend\\User.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Backend\User->dataList()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\User))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:54:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:54:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:54:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:54:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:54:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:54:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:55:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:55:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:55:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:55:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 09:56:10 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, null given, called in C:\xampp8\htdocs\webchat\app\Models\Datatable.php on line 44
+in SYSTEMPATH\Database\BaseBuilder.php on line 1437.
+ 1 APPPATH\Models\Datatable.php(44): CodeIgniter\Database\BaseBuilder->orderBy(null, 'asc')
+ 2 APPPATH\Models\Datatable.php(60): App\Models\Datatable->_get_datatables_query('user', [...], [...], [...])
+ 3 APPPATH\Controllers\Backend\User.php(33): App\Models\Datatable->get_datatables([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Backend\User->dataList()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\User))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-17 09:56:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Backend\User::$datatable is deprecated in APPPATH\Controllers\Backend\User.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Backend\User->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

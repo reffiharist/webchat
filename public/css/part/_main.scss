@@ -1,0 +1,22 @@
+#title-page{
+	@include flexbox();
+	@include justify-content(center);
+	@include align-items(center);
+	height: 280px;
+	background: url('../images/bg-line.png'), $second_color;
+	background-position: center top;
+	background-size: cover;
+}
+.content-title-page{
+	text-align: center;
+	h2, p{
+		color: #fff;
+	}
+	h2{
+		font-size: 42px;
+	}
+	p{
+		font-size: 18px;
+		font-weight: 500;
+	}
+}

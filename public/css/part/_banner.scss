@@ -1,0 +1,86 @@
+#banner{
+	position: relative;
+	padding: 70px 0;
+	background: $second_color;
+	overflow: hidden;
+	&::before{
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 20%;
+		height: 100%;
+		background: $brand_color;
+		z-index: 0;
+	}
+	&::after{
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 100px;
+		width: 500px;
+		height: 150%;
+		background: $brand_color;
+		transform: rotate(-20deg);
+		z-index: 0;
+	}
+}
+.bg-banner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/map.png');
+	background-size: contain;
+	background-position: center center;
+	z-index: 1;
+}
+.img-banner{
+	position: relative;
+	padding-right: 50px;
+	z-index: 1;
+}
+.content-banner{
+	position: relative;
+	z-index: 1;
+	h2{
+		margin-bottom: 30px;
+		font-size: 60px;
+		color: #fff;
+		font-weight: 600;
+	}
+	p{
+		margin-bottom: 50px;
+		font-size: 20px;
+		color: #fff;
+		line-height: 32px;
+	}
+}
+
+.btn-banner{
+	display: inline-block;
+	margin-right: 15px;
+	width: 200px;
+	background: $brand_color;
+	border-radius: 10px;
+	&:hover{
+		color: #fff;
+		background: darken($third_color, 5%);
+	}
+	.bi{
+		margin-left: 20px;
+		font-size: 17px;
+		color: $third_color;
+	}
+}
+.btn-banner-border{
+	color: $third_color !important;
+	font-weight: 600;
+	background: #fff !important;
+	border: 2px solid $third_color !important;
+	border-radius: 10px;
+	.bi{
+		font-size: 18px;
+	}
+}

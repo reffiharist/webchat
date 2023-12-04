@@ -1,0 +1,1 @@
+<span class="error-form"><?= esc($error) ?></span>

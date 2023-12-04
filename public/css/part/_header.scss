@@ -1,0 +1,52 @@
+header{
+	background: #fff;
+}
+.navbar-header{
+	@include flexbox();
+	@include justify-content(space-between);
+	@include align-items(center);
+	padding: 15px 0;
+}
+.logo{
+	img{
+		width: 150px;
+	}
+}
+#menu{
+	ul{
+		@include flexbox();
+		li{
+			a{
+				display: block;
+				padding: 10px 20px;
+				color: #454545;
+				font-weight: 500;
+				&:hover{
+					color: $second_color;
+				}
+			}
+		}
+	}
+}
+#button-header{
+	ul{
+		@include flexbox();
+		li{
+			margin-right: 10px;
+			&:last-child{
+				margin-right: 0;
+			}
+			a{
+				display: block;
+				background: $brand_color;
+				.bi{
+					margin-right: 7px;
+					font-size: 20px;
+					color: $third_color;
+					line-height: 1px;
+					vertical-align: -2px;
+				}
+			}
+		}
+	}
+}
