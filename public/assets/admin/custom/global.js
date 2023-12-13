@@ -54,6 +54,40 @@ function remove(id, url = '') {
     });
 }
 
+function publish(id, param, url = '')
+{    
+    $.ajax({
+        url : url,
+        type: "POST",
+        data: {id:id, param:param},
+        dataType: "JSON",
+        success: function(data) {
+            if(data.error == false) {
+                Swal.fire({
+                    title   : 'Success!',
+                    text    : data.message,
+                    icon    : 'success'
+                });
+                
+                reloadTable();
+            } else {
+                Swal.fire({
+                    title   : 'Failed!',
+                    text    : data.message,
+                    icon    : 'error'
+                });
+            }
+            
+        }, error: function (jqXHR, textStatus, errorThrown) {                  
+            Swal.fire({
+                title   : 'Failed!',
+                text    : data.message,
+                icon    : 'error'
+            });
+        }
+    });
+}
+
 KTUtil.onDOMContentLoaded(function () {
     
 });

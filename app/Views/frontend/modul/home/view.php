@@ -29,68 +29,22 @@
 		</div>
 
 		<div class="wrap-feature">
-			<div class="item-feature">
-				<div class="icon-feature">
-					<i class="bi bi-megaphone"></i>
+			<?php foreach ($feature as $d): ?>
+				<div class="item-feature">
+					<div class="icon-feature">
+						<?=$d->feature_icon?>
+					</div>
+					<div class="content-feature">
+						<h3><?=$d->feature_name?></h3>
+						<p><?=$d->feature_desc?></p>
+					</div>
 				</div>
-				<div class="content-feature">
-					<h3>Broadcast</h3>
-					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero error in est odio expedita at aliquid.</p>
-				</div>
-			</div>
-
-			<div class="item-feature">
-				<div class="icon-feature">
-					<i class="bi bi-reply"></i>
-				</div>
-				<div class="content-feature">
-					<h3>Auto Reply</h3>
-					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero error in est odio expedita at aliquid.</p>
-				</div>
-			</div>
-
-			<div class="item-feature">
-				<div class="icon-feature">
-					<i class="bi bi-journal-arrow-down"></i>
-				</div>
-				<div class="content-feature">
-					<h3>Contact Sync</h3>
-					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero error in est odio expedita at aliquid.</p>
-				</div>
-			</div>
-
-			<div class="item-feature">
-				<div class="icon-feature">
-					<i class="bi bi-collection"></i>
-				</div>
-				<div class="content-feature">
-					<h3>Group Management</h3>
-					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero error in est odio expedita at aliquid.</p>
-				</div>
-			</div>
-
-			<div class="item-feature">
-				<div class="icon-feature">
-					<i class="bi bi-floppy"></i>
-				</div>
-				<div class="content-feature">
-					<h3>Individual Storage</h3>
-					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero error in est odio expedita at aliquid.</p>
-				</div>
-			</div>
-
-			<div class="item-feature">
-				<div class="icon-feature">
-					<i class="bi bi-arrow-left-right"></i>
-				</div>
-				<div class="content-feature">
-					<h3>API Integration</h3>
-					<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero error in est odio expedita at aliquid.</p>
-				</div>
-			</div>
+			<?php endforeach ?>
 		</div>
 	</div>
 </section>
+
+
 
 <section id="pricing">
 	<div class="container">
@@ -113,157 +67,55 @@
 		</ul>
 
 		<div class="tab-content">
-			<div class="tab-pane fade show active" id="tab-personal">
-				<div class="wrap-box-price">
-					<div class="box-price">
-						<div class="box-price-header">
-							<h3>Starter</h3>
-						</div>
-						<div class="box-price-price">
-							<h3><sup>IDR</sup> 150.000 <span>/bulan</span></h3>
-						</div>
-						<div class="box-price-body">
-							<ul>
-								<li>3 Whatsapp number</li>
-								<li>150,000 Message save</li>
-								<li>5 User / Agent</li>
-								<li>Unlimited send message</li>
-								<li>API Intergration</li>
-							</ul>
-						</div>
-						<div class="box-price-footer">
-							<a class="default-btn" href="http://my.webchat.id/register">Register Now</a>
-						</div>
-					</div>
+			<?php foreach ($price as $d): ?>
+				<?php $active = $d['price']['key'] == 'personal' ? 'show active' : ''; ?>
+				<div class="tab-pane fade <?=$active?>" id="tab-<?=$d['price']['key']?>">
+					<div class="wrap-box-price">
+						<?php foreach ($d['package'] as $p): ?>
+							<?php $lists = explode(',', $p->package_desc); ?>
+							<div class="box-price">
+								<div class="box-price-header">
+									<h3><?=$p->package_name?></h3>
+								</div>
+								<div class="box-price-price">
+									<h3><sup>IDR</sup> <?=angka($p->package_price)?> <span>/bulan</span></h3>
+								</div>
+								<div class="box-price-body">
+									<ul>
+										<?php foreach ($lists as $key => $value): ?>
+											<li><?=$value?></li>
+										<?php endforeach ?>
+									</ul>
+								</div>
+								<div class="box-price-footer">
+									<a class="default-btn" href="http://my.webchat.id/register">Register Now</a>
+								</div>
+							</div>
+						<?php endforeach ?>
 
-					<div class="box-price active">
-						<div class="box-price-header">
-							<h3>Advanced</h3>
-						</div>
-						<div class="box-price-price">
-							<h3><sup>IDR</sup> 150.000 <span>/bulan</span></h3>
-						</div>
-						<div class="box-price-body">
-							<ul>
-								<li>5 Whatsapp number</li>
-								<li>250,000 Message save</li>
-								<li>10 User / Agent</li>
-								<li>Unlimited send message</li>
-								<li>API Intergration</li>
-							</ul>
-						</div>
-						<div class="box-price-footer">
-							<a class="default-btn" href="http://my.webchat.id/register">Register Now</a>
-						</div>
-					</div>
-
-					<div class="box-price">
-						<div class="box-price-header">
-							<h3>Add On</h3>
-						</div>
-						<div class="box-price-price">
-							<h3><sup>IDR</sup> 50,000 - 125,000</h3>
-						</div>
-						<div class="box-price-body">
-							<ul>
-								<li>1 number + 50,000 message<br> Rp 50,000</li>
-								<li>3 number + 150,000 message<br> Rp 125,000</li>
-							</ul>
-							<div class="mb-5"></div>
-						</div>
-						<div class="box-price-footer">
-							<a class="default-btn" href="<?=site_url('contact')?>">Contact Us</a>
+						<div class="box-price">
+							<div class="box-price-header">
+								<h3>Add On</h3>
+							</div>
+							<div class="box-price-price">
+								<h3><sup>IDR</sup> 50,000 - 125,000</h3>
+							</div>
+							<div class="box-price-body">
+								<ul>
+									<?php foreach ($d['addon'] as $a): ?>
+									<li><?=$a->addon_number?> number + <?=angka($a->addon_message)?> message<br> Rp <?=angka($a->addon_price)?></li>
+									<?php endforeach ?>
+								</ul>
+								<div class="mb-5"></div>
+							</div>
+							<div class="box-price-footer">
+								<a class="default-btn" href="<?=site_url('contact')?>">Contact Us</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="tab-pane fade" id="tab-company">
-				<div class="wrap-box-price">
-					<div class="box-price">
-						<div class="box-price-header">
-							<h3>Contact Center Silver</h3>
-						</div>
-						<div class="box-price-price">
-							<h3><sup>IDR</sup> 500,000 <span>/bulan</span></h3>
-						</div>
-						<div class="box-price-body per-4">
-							<ul>
-								<li>5 Whatsapp number</li>
-								<li>500,000 Message save</li>
-								<li>10 User / Agent</li>
-								<li>Unlimited send message</li>
-								<li>API Intergration</li>
-							</ul>
-						</div>
-						<div class="box-price-footer">
-							<a class="default-btn" href="http://my.webchat.id/register">Register Now</a>
-						</div>
-					</div>
-
-					<div class="box-price">
-						<div class="box-price-header">
-							<h3>Contact Center<br> Gold</h3>
-						</div>
-						<div class="box-price-price">
-							<h3><sup>IDR</sup> 900,000 <span>/bulan</span></h3>
-						</div>
-						<div class="box-price-body per-4">
-							<ul>
-								<li>10 Whatsapp number</li>
-								<li>1,000,000 Message save</li>
-								<li>25 User / Agent</li>
-								<li>Unlimited send message</li>
-								<li>API Intergration</li>
-							</ul>
-						</div>
-						<div class="box-price-footer">
-							<a class="default-btn" href="http://my.webchat.id/register">Register Now</a>
-						</div>
-					</div>
-
-					<div class="box-price">
-						<div class="box-price-header">
-							<h3>Contact Center Platinum</h3>
-						</div>
-						<div class="box-price-price">
-							<h3><sup>IDR</sup> 1,350,000 <span>/bulan</span></h3>
-						</div>
-						<div class="box-price-body per-4">
-							<ul>
-								<li>15 Whatsapp number</li>
-								<li>1,500,000 Message save</li>
-								<li>50 User / Agent</li>
-								<li>Unlimited send message</li>
-								<li>API Intergration</li>
-							</ul>
-						</div>
-						<div class="box-price-footer">
-							<a class="default-btn" href="http://my.webchat.id/register">Register Now</a>
-						</div>
-					</div>
-
-					<div class="box-price">
-						<div class="box-price-header">
-							<h3>Add On</h3>
-						</div>
-						<div class="box-price-price">
-							<h3><sup>IDR</sup> 80,000 - 200,000</h3>
-						</div>
-						<div class="box-price-body per-4">
-							<ul>
-								<li>1 number + 100,000<br> message Rp 80,000</li>
-								<li>3 number + 300,000<br> message Rp 200,000</li>
-							</ul>
-							<div class="mb-5"></div>
-						</div>
-						<div class="box-price-footer">
-							<a class="default-btn" href="<?=site_url('contact')?>">Contact Us</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+			<?php endforeach ?>
+		</div>	
 	</div>
 </section>
 

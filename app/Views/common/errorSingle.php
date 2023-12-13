@@ -1,1 +1,1 @@
-<span class="error-form"><?= esc($error) ?></span>
+<span class="fv-plugins-message-container invalid-feedback"><?= esc($error) ?></span>

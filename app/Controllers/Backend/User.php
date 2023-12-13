@@ -46,31 +46,27 @@ class User extends BaseController
             $id = "'".encrypt($d->user_id)."'";
             $urldelete = "'".site_url($this->module.'/delete')."'";
             $urlpublish = "'".site_url($this->module.'/publish')."'";
-            $userActive = $d->user_active ? 'Active' : 'Nonactive';
             $isActive = $d->user_active ? 'success' : 'danger';
+            $userActive = $d->user_active ? 'Active' : 'Nonactive';
+            $userStatusParam = $d->user_active ? 0 : 1;
+            $userStatusLabel = $d->user_active ? 'Deactivate' : 'Activate';
 
             $row[] = $d->user_name;
             $row[] = $d->user_email;
             $row[] = $type[$d->user_level];
             $row[] = "<div class='badge badge-light-".$isActive." fw-bold'>".$userActive."</div>";
             $row[] = date("d M Y, H:i");
-            // $row[] = '<div class="dropdown">
-            //         <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Actions</button>
-            //         <ul class="dropdown-menu">
-            //             <li><a class="dropdown-item" href="#">Deactive</a></li>
-            //             <li><a class="dropdown-item" href="javascript:void(0)" onclick="edit('.$d->user_id.')">Edit</a></li>
-            //             <li><a class="dropdown-item" href="javascript:void(0)" onclick="remove('.$id.', '.$urldelete.')">Delete</a></li>
-            //         </ul>
-            //     </div>';
-
             $row[] = '<a href="'.site_url('backend/user').'" class="btn btn-sm btn-light btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
                 '.svgIcon('icons/duotune/arrows/arr072.svg', 'svg-icon svg-icon-5 m-0').'</a>
                 <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
                     <div class="menu-item px-3">
-                        <a href="#" class="menu-link px-3">Edit</a>
+                        <a href="javascript:void(0)" onclick="publish('.$id.', '.$userStatusParam.', '.$urlpublish.')" class="menu-link px-3">'.$userStatusLabel.'</a>
                     </div>
                     <div class="menu-item px-3">
-                        <a href="#" class="menu-link px-3">Delete</a>
+                        <a href="javascript:void(0)" onclick="edit('.$d->user_id.')" class="menu-link px-3">Edit</a>
+                    </div>
+                    <div class="menu-item px-3">
+                        <a href="javascript:void(0)" onclick="remove('.$id.', '.$urldelete.')" class="menu-link px-3">Delete</a>
                     </div>
                 </div>';
 
@@ -104,7 +100,7 @@ class User extends BaseController
             $json = [
                 'error' => true,
                 'name' => $this->validator->showError('name', 'errorSingle'),
-                'email' => $this->validator->showError('name', 'errorSingle'),
+                'email' => $this->validator->showError('email', 'errorSingle'),
                 'password' => $this->validator->showError('password', 'errorSingle'),
                 'copassword' => $this->validator->showError('copassword', 'errorSingle'),
                 'level' => $this->validator->showError('level', 'errorSingle'),
@@ -201,6 +197,8 @@ class User extends BaseController
     {
         $post = $this->request->getPost(['id', 'param']);
 
+        $userModel = new UserModel;
+
         if(!$post['id']) {
 
             $message = $post['param'] == 1 ? 'Error activate user' : 'Error deactivate user';
@@ -219,7 +217,7 @@ class User extends BaseController
             $data['user_active'] = 0;
         }
 
-        $this->model->update($id, $data);
+        $userModel->update($id, $data);
 
         $message = $status == 1 ? 'User has been actived' : 'User has been deactived';
 

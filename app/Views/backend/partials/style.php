@@ -1,5 +1,5 @@
 <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-<link rel="shortcut icon" href="<?=base_url('public/assets/admin/media/logos/favicon.ico')?>" />
+<link rel="shortcut icon" href="<?=base_url('public/assets/admin/media/logos/fav.png')?>" />
 
 <!--begin::Fonts-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />

@@ -59,7 +59,18 @@ function bCrypt($pass,$cost)
     return crypt($pass,$salt);
 }
 
-function active_menu($value, $param, $cetak = 'active')
+function uri_segment($segment = NULL)
+{
+    $uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+
+    return isset($uriSegments[$segment]) ? $uriSegments[$segment] : FALSE;
+}
+
+/*
+ * $value = uri_segment(n)
+ * $param = module / controller
+ */
+function activeMenu($value, $param, $cetak = 'active')
 {
     if(is_array($param)) {
         if(in_array($value, $param)){

@@ -25,16 +25,6 @@ function tableData() {
 	});
 };
 
-function mainConfig() {
-	$('.table-responsive').on('show.bs.dropdown', function () {
-	     $('.table-responsive').css( "overflow", "inherit" );
-	});
-
-	$('.table-responsive').on('hide.bs.dropdown', function () {
-	     $('.table-responsive').css( "overflow", "auto" );
-	});
-}
-
 function add()
 {
     save_method = 'create';
@@ -75,7 +65,10 @@ function edit(id)
 }
 
 function save() {
+
 	var btnSubmit = document.querySelector('[data-kt-users-modal-action="submit"]');
+
+    $('.fv-row .invalid-feedback').remove();
 
 	btnSubmit.setAttribute("data-kt-indicator", "on");
 	btnSubmit.disabled = !0;
@@ -99,10 +92,10 @@ function save() {
             
             if(data.error == true)
             {
-                $('#er_name').html(data.name);
-                $('#er_email').html(data.email);
-                $('#er_password').html(data.password);
-                $('#er_copassword').html(data.copassword);
+                $('.fv-row input[name=name]').after(data.name);
+                $('.fv-row input[name=email]').after(data.email);
+                $('.fv-row input[name=password]').after(data.password);
+                $('.fv-row input[name=copassword]').after(data.copassword);
             }
             else
             {
@@ -119,9 +112,13 @@ function save() {
 KTUtil.onDOMContentLoaded(function () {
     tableData();
 
+    // Add function KTMenu
     tableData.on('draw', function() {
         KTMenu.createInstances();
     });
-    
-    mainConfig();
+
+    // Search table
+    document.querySelector('[data-kt-filter="search"]').addEventListener("keyup", function (t) {
+        tableData.search(t.target.value).draw();
+    });
 });

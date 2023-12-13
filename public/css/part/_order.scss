@@ -1,0 +1,164 @@
+#order{
+	padding: 100px 0;
+}
+#container-order{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+}
+
+.card-custom{
+	.card-header{
+		padding: 15px 20px;
+		font-size: 18px;
+	}
+	.card-body{
+		padding: 30px;
+	}
+}
+
+.item-list-order{
+	@include flexbox();
+	@include justify-content(space-between);
+	padding-bottom: 25px;
+	margin-bottom: 20px;
+	border-bottom: 2px dashed rgba(#ddd, .5);
+	&:last-child{
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+}
+.content-list-order{
+	h5{
+		font-size: 18px;
+		font-weight: 600;
+	}
+	ul{
+		padding-left: 10px;
+		li{
+			position: relative;
+			color: $text_light;
+			&::before{
+				content: '-';
+				margin-right: 10px;
+			}
+		}
+	}
+}
+.radio-list-order{
+	input{
+		margin-right: 15px;
+		margin-top: 6px;
+	}
+	label{
+		margin-bottom: 0;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	p{
+		margin-bottom: 0;
+		margin-left: 32px;
+		color: $text_light;
+	}
+}
+.price-list-order{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+// Duration
+.wrap-durasi{
+	@include flexbox();
+	gap: 15px;
+}
+.item-durasi{
+	position: relative;
+	width: calc(100% / 4);
+	&:hover{
+		input ~ .content-durasi{
+			background: #1378c0;
+			border-color: #1378c0;
+			span, h5{
+				color: #fff;
+			}
+		}
+	}
+	input{
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+		&:checked ~ .content-durasi{
+			background: darken(#1378c0, 5%);
+			border-color: #1378c0;
+			span, h5{
+				color: #fff;
+			}
+		}
+	}
+}
+.content-durasi{
+	padding: 15px;
+	border: 1px solid rgba(#ddd, .7);
+	border-radius: 4px;
+	span{
+		display: block;
+		margin-bottom: 5px;
+		font-size: 15px;
+		color: $text_light;
+	}
+	h5{
+		margin: 0;
+		font-size: 18px;
+	}
+}
+
+.btn-submit-order{
+	padding: 12px 25px;
+}
+
+//SUMMARY
+.summary-list{
+	li{
+		@include flexbox();
+		@include justify-content(space-between);
+		padding-bottom: 15px;
+		margin-bottom: 17px;
+		border-bottom: 1px solid rgba(#ddd, .6);
+		&:last-child{
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border-bottom: none;
+		}
+	}
+}
+.content-summary-list{
+	h5{
+		margin-bottom: 0;
+		font-size: 15px;
+		font-weight: 600;
+	}
+	p{
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+}
+.price-summary-list{
+	text-align: right;
+}
+#summary-total{
+	padding: 15px 20px;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #333;
+	text-align: center;
+	font-weight: 700;
+	background: lighten(#1378c0, 50%);
+	border-radius: 5px;
+}
+.sticky-summary{
+  	position: sticky;
+	top: 20px;
+}
