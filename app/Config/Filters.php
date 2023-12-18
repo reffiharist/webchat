@@ -8,6 +8,7 @@ use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
+use App\Filters\BackendLoginFilter;
 
 class Filters extends BaseConfig
 {
@@ -24,6 +25,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'backendlogin'  => BackendLoginFilter::class,
     ];
 
     /**
@@ -66,5 +68,26 @@ class Filters extends BaseConfig
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
-    public array $filters = [];
+    public array $filters = [
+        'backendlogin' => [
+            'before' => [
+                'backend',
+                'backend/home',
+                'backend/home/*',
+                'backend/user',
+                'backend/user/*',
+                'backend/addon',
+                'backend/addon/*',
+                'backend/channel',
+                'backend/channel/*',
+                'backend/feature',
+                'backend/feature/*',
+                'backend/package',
+                'backend/package/*',
+            ],
+            'after' => [
+                'backend/login',
+            ]
+        ]
+    ];
 }

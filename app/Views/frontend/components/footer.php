@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="wrap-footer">
 			<div class="item-footer">
-				<a class="logo-footer">
+				<a class="logo-footer" href="<?=site_url()?>">
 					<img src="<?=base_url('public/images/logo-webchat.png')?>" alt="">
 				</a>
 				<p>Mauris ornare tristique nisi sit amet pharetra. Curabitur egestas elit placerat mauris posuere tincidunt. Ut faucibus est at leo tincidunt, eu faucibus mi consequat. Quisque quis nunc vel</p>
@@ -11,8 +11,8 @@
 			<div class="item-footer">
 				<h3>Quick Links</h3>
 				<ul class="ul footer-list-menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About Us</a></li>
+					<li><a href="<?=site_url()?>">Home</a></li>
+					<li><a href="<?=site_url('about')?>">About Us</a></li>
 					<li><a href="#">Use Case</a></li>
 				</ul>
 			</div>
@@ -20,8 +20,8 @@
 			<div class="item-footer">
 				<h3>Integration</h3>
 				<ul class="ul footer-list-menu">
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Pricing Plan</a></li>
+					<li><a href="<?=site_url('contact')?>">Contact Us</a></li>
+					<li><a href="<?=site_url('price')?>">Pricing Plan</a></li>
 					<li><a href="#">FAQ</a></li>
 				</ul>
 			</div>

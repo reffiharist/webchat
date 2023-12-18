@@ -1,6 +1,12 @@
 <?php
 
-use Xendit\Xendit;
+namespace App\Libraries;
+
+use Xendit\Configuration;
+use Xendit\Invoice\InvoiceApi;
+use Xendit\Invoice\CreateInvoiceRequest;
+
+// use App\Model\SettingModel;
 
 class Xpayment
 {
@@ -8,17 +14,13 @@ class Xpayment
 
 	function __construct()
 	{
-		$_this =& get_instance();
+		$model = model('SettingModel');
+        $data = $model->find(1);
 
-		$_this->load->model(['sys_model']);
+		$this->apiKey = $data->is_production ? $data->api_key : $data->api_key_test;
 
-		$sys = $_this->sys_model->get(1);
-
-		$this->apiKey = $sys->is_production ? $sys->api_key : $sys->api_key_test;
-
-		Xendit::setApiKey($this->apiKey);
+		Configuration::setXenditKey($this->apiKey);
     }
-
 
 	// VIRTUAL ACCOUNT
 
@@ -66,6 +68,8 @@ class Xpayment
 
 	function createInvoice($data = [])
 	{
+		$for_user_id = "656842102dfa4c4226febb46";
+
 		$params = [ 
 		    'external_id' => $data['external_id'],
 		    'amount' => $data['amount'],
@@ -76,8 +80,8 @@ class Xpayment
 		        'email' => $data['customer']['email'],
 		        'mobile_number' => $data['customer']['mobile_number']
 		    ],
-		    'success_redirect_url' => site_url('booking/status/'.$data['external_id'].'/success'),
-		    'failure_redirect_url' => site_url('booking/status/'.$data['external_id'].'/failed'),
+		    'success_redirect_url' => site_url('payment/status/'.$data['external_id'].'/success'),
+		    'failure_redirect_url' => site_url('payment/status/'.$data['external_id'].'/failed'),
 		    'payment_methods' => [$data['payment_methods']],
 		    'currency' => 'IDR',
 		    'items' => $data['items'],
@@ -89,8 +93,10 @@ class Xpayment
 		    ]
 		];
 
-		$createInvoice = \Xendit\Invoice::create($params);
+		$apiInstance = new InvoiceApi();
+		$create_invoice_request = new CreateInvoiceRequest($params);
+		$result = $apiInstance->createInvoice($create_invoice_request);
 		  
-		return $createInvoice;
+		return $result;
 	}
 }

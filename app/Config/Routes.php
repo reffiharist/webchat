@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/backend/payment-channel', 'Backend\Channel::index');
+$routes->get('/backend/logout', 'Backend\Login::logout');
 
 $routes->set404Override(function($message = null) {
     $data['message'] = $message;

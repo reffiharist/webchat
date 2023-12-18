@@ -202,10 +202,10 @@
 	<!--end::sidebar menu-->
 	<!--begin::Footer-->
 	<div class="app-sidebar-footer flex-column-auto pt-2 pb-6 px-6" id="kt_app_sidebar_footer">
-		<a href="../../demo1/dist/documentation/getting-started.html" class="btn btn-flex flex-center btn-custom btn-primary overflow-hidden text-nowrap px-0 h-40px w-100" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss-="click" title="200+ in-house components and 3rd-party plugins">
-			<span class="btn-label">Docs &amp; Components</span>
+		<a href="<?=site_url('backend/logout')?>" class="btn btn-flex flex-center btn-custom btn-primary overflow-hidden text-nowrap px-0 h-40px w-100">
+			<span class="btn-label">Sign Out</span>
 			<!--begin::Svg Icon | path: icons/duotune/general/gen005.svg-->
-			<?=svgIcon('icons/duotune/general/gen005.svg', 'svg-icon btn-icon svg-icon-2 m-0')?>
+			<?=svgIcon('icons/duotune/arrows/arr096.svg', 'svg-icon btn-icon svg-icon-2 m-0')?>
 			<!--end::Svg Icon-->
 		</a>
 	</div>

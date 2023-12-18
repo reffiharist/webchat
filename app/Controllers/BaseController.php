@@ -54,6 +54,10 @@ abstract class BaseController extends Controller
         parent::initController($request, $response, $logger);
 
         // Preload any models, libraries, etc, here.
+        // Services
+        $this->session = \Config\Services::session();
+
+        // Libraries
         $this->enum = new Enum();
 
         // E.g.: $this->session = \Config\Services::session();

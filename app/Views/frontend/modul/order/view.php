@@ -7,11 +7,37 @@
 
 <section id="order">
 	<div class="container">
-		<form id="formOrder" action="#" onsubmit="submitOrder(); return false;">
+		<form id="formOrder" action="#" onsubmit="processOrder(); return false;">
 			<input type="hidden" name="package" value="<?=encrypt($data->package_id)?>">
 
 			<div class="row">
 				<div class="col-lg-8">
+					<div class="card card-custom mb-4">
+						<div class="card-header">Data Diri</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group mb-3">
+										<label class="mb-1">Name</label>
+										<input type="text" class="form-control" name="name" value="Reffizal Harist" required>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group mb-3">
+										<label class="mb-1">Phone Number</label>
+										<input type="text" class="form-control" name="telp" value="6289606298905" required>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group mb-3">
+								<label class="mb-1">Email</label>
+								<input type="email" class="form-control" name="email" value="reffizalharist@gmail.com" required>
+							</div>
+						</div>
+					</div>
+
 					<div class="card card-custom mb-4">
 						<div class="card-header">Order Item</div>
 						<div class="card-body">
@@ -35,7 +61,7 @@
 										<div class="content-list-order">
 											<div class="radio-list-order">
 												<div class="form-check">
-													<input class="form-check-input" type="radio" value="<?=$d->addon_id?>" name="addon" id="addon<?=$n?>" data-label="Add On <?=$d->addon_name?>" data-price="<?=$d->addon_price?>">
+													<input class="form-check-input" type="radio" value="<?=encrypt($d->addon_id)?>" name="addon" id="addon<?=$n?>" data-label="Add On <?=$d->addon_name?>" data-price="<?=$d->addon_price?>">
 													<label class="form-check-label" for="addon<?=$n?>">
 														Add On <?=$d->addon_name?>
 													</label>
@@ -65,7 +91,7 @@
 									<?php $price = $data->package_price * $key; ?>
 									<?php $checked = $key == 1 ? "checked" : ""; ?>
 									<label class="item-durasi">
-										<input <?=$checked?> type="radio" name="durasi" value="<?=$key?>" data-label="<?=$value?>" data-price="<?=$price?>">
+										<input <?=$checked?> type="radio" name="durasi" value="<?=encrypt($key)?>" data-label="<?=$value?>" data-price="<?=$price?>">
 										<div class="content-durasi">
 											<span><?=$value?></span>
 											<h5>Rp <?=angka($price)?></h5>
@@ -139,9 +165,9 @@
 </section>
 
 <script>
-$(function() {
+var baseUrl = "<?=site_url()?>";
 
-	var baseUrl = "<?=site_url()?>";
+$(function() {
 	var priceDefault = '<?=$data->package_price?>';
 	var pricePackage = parseInt(priceDefault);
 	var priceAddon = 0;
@@ -187,7 +213,7 @@ $(function() {
 
 		$.ajax({
 	        type     : "POST",
-	        url      : baseUrl + "/order/getChannel",
+	        url      : baseUrl + "order/getChannel",
 	        data     : {payMethod: payMethod},
 	        dataType : "json",
 	        error    : function (xhr, status, error) {
@@ -205,7 +231,7 @@ $(function() {
 
 		$.ajax({
 	        type     : "POST",
-	        url      : baseUrl + "/order/getFee",
+	        url      : baseUrl + "order/getFee",
 	        data     : { channel: channel, price: price },
 	        dataType : "json",
 	        error    : function (xhr, status, error) {
@@ -238,7 +264,18 @@ $(function() {
 	}
 });
 
-function submitOrder() {
-	
+function processOrder() {
+	$.ajax({
+        type     : "POST",
+        url      : baseUrl + "order/processOrder",
+        data     : $('#formOrder').serialize(),
+        dataType : "json",
+        error    : function (xhr, status, error) {
+            alert("An error occurred");
+        },
+        success  : function(data) {
+            window.location.replace(data.url);
+        },
+    });
 }
 </script>

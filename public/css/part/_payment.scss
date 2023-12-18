@@ -1,0 +1,25 @@
+#payment-page{
+	padding: 100px 0;
+}
+.header-payment-status{
+	text-align: center;
+	&.failed{
+		h3{
+			color: darken(#b02a37, 5%);
+		}
+		.icon-status{
+			.bi{
+				color: #b02a37;
+			}
+		}
+	}
+	h3{
+		color: darken(#1aa179, 10%);
+	}
+}
+.icon-status{
+	.bi{
+		font-size: 72px;
+		color: #1aa179;
+	}
+}

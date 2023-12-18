@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div class="navbar-header">
-            <a class="logo" href="#">
+            <a class="logo" href="<?=site_url()?>">
                 <img src="<?=base_url('public/images/logo-webchat.png')?>" alt="">
             </a>
             

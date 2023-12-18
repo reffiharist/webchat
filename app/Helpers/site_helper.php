@@ -91,3 +91,11 @@ function angka($x = 0)
 {
     return number_format($x, 0, ",", ".");
 }
+
+function dateTimeZoneToDatetime($param)
+{
+    $dateTime = DateTime::createFromFormat('Y-m-d\TH:i:s.u\Z', $param);
+    $date = $dateTime->format('Y-m-d H:i:s.u');
+
+    return $date;
+}

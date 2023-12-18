@@ -88,7 +88,7 @@
 									</ul>
 								</div>
 								<div class="box-price-footer">
-									<a class="default-btn" href="http://my.webchat.id/register">Register Now</a>
+									<a class="default-btn" href="<?=site_url('order/package/'.encrypt($p->package_id))?>">Register Now</a>
 								</div>
 							</div>
 						<?php endforeach ?>

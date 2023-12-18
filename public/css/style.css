@@ -818,6 +818,22 @@ header {
   position: sticky;
   top: 20px; }
 
+#payment-page {
+  padding: 100px 0; }
+
+.header-payment-status {
+  text-align: center; }
+  .header-payment-status.failed h3 {
+    color: #9b2531; }
+  .header-payment-status.failed .icon-status .bi {
+    color: #b02a37; }
+  .header-payment-status h3 {
+    color: #137558; }
+
+.icon-status .bi {
+  font-size: 72px;
+  color: #1aa179; }
+
 footer {
   padding-top: 100px;
   background: #151d34; }
