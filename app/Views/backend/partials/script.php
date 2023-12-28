@@ -1,4 +1,5 @@
 <script>var hostUrl = "<?=base_url('public/assets/admin/')?>";</script>
+<script>var baseUrl = "<?=base_url()?>";</script>
 
 <!--begin::Global Javascript Bundle(used by all pages)-->
 <script src="<?=base_url('public/assets/admin/plugins/global/plugins.bundle.js')?>"></script>
@@ -12,5 +13,11 @@
 <script src="<?=base_url('public/assets/admin/custom/global.js')?>"></script>
 
 <?php if (isset($script)): ?>
-	<?php echo $script; ?>
+	<?php if (is_array($script)): ?>
+		<?php foreach ($script as $key => $value): ?>
+			<?php echo $value; ?>
+		<?php endforeach ?>
+	<?php else: ?>
+		<?php echo $script; ?>
+	<?php endif ?>
 <?php endif ?>

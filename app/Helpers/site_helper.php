@@ -92,10 +92,72 @@ function angka($x = 0)
     return number_format($x, 0, ",", ".");
 }
 
-function dateTimeZoneToDatetime($param)
+function sendEmail($to, $subject, $message)
 {
-    $dateTime = DateTime::createFromFormat('Y-m-d\TH:i:s.u\Z', $param);
-    $date = $dateTime->format('Y-m-d H:i:s.u');
+    $email = \Config\Services::email();
+
+    $config['protocol'] = 'smtp';
+    $config['SMTPHost'] = 'mail.webchat.id';
+    $config['SMTPPort'] = 465;
+    $config['SMTPUser'] = 'noreply@webchat.id';
+    $config['SMTPPass'] = 'noreply#2023';
+    $config['SMTPCrypto'] = 'tls';
+    $config['mailType'] = 'html';
+
+    $email->initialize($config);
+    $email->setTo($to);
+    $email->setFrom('noreply@webchat.id', 'WebChat ID');
+    $email->setSubject($subject);
+    $email->setMessage($message);
+
+    if ($email->send()) {
+        return TRUE;
+    } else {
+        return $email->printDebugger(['headers']);
+    }
+}
+
+function dateTimeZoneToDatetime($param, $isOrder = TRUE)
+{
+    if($isOrder) {
+        $date = $param->format('Y-m-d H:i:s');
+    } else {
+        $dateTime = DateTime::createFromFormat('Y-m-d\TH:i:s.u\Z', $param);
+        $date = $dateTime->format('Y-m-d H:i:s');
+    }
 
     return $date;
+}
+
+function badge($status = NULL)
+{
+    if($status == 'pending') {
+        $color = 'warning';
+    }else if($status == 'processing') {
+        $color = 'primary';
+    }else if($status == 'completed') {
+        $color = 'success';
+    }else {
+        $color = "danger";
+    }
+
+    return "<div class='badge badge-light-".$color." fw-bold'>".$status."</div>";
+}
+
+function packageName($id = NULL, $addon = FALSE)
+{
+    $packageModel = new \App\Models\PackageModel;
+    $addonModel = new \App\Models\AddonModel;
+
+    if(!$id) {
+        return FALSE;
+    }
+
+    $data = !$addon ? $packageModel->find($id) : $addonModel->find($id);
+
+    if(!$data) {
+        return FALSE;
+    }
+
+    return !$addon ? $data->package_name : $data->addon_name;
 }

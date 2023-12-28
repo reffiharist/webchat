@@ -179,6 +179,21 @@ class Order extends BaseController
             $orderItemModel->insert($aon);
         }
 
+        // Create item for payment
+        $items = $orderItemModel->where('order_id', $orderId)->findAll();
+        $itemList = [];
+        $itemListData = [];
+
+        foreach ($items as $d) {
+            $itemList[$d->item_id]['name'] = packageName($d->product_id, $d->is_addon); 
+            $itemList[$d->item_id]['quantity'] = (int)$d->item_qty; 
+            $itemList[$d->item_id]['price'] = (int)$d->item_price; 
+        }
+
+        foreach ($itemList as $d) {
+            $itemListData[] = $d;
+        }
+
         // Create payment
         $params = [
             'orderId' => $orderId,
@@ -191,9 +206,7 @@ class Order extends BaseController
                 'mobile_number' => '+' . $post['telp'],
             ],
             'channel' => $channel->channel_code,
-            'items' => [
-                ['name' => 'Contoh Produk', 'quantity' => 1, 'price' => $subtotal],
-            ],
+            'items' => $itemListData,
         ];
 
         $payment = $this->createPayment($params);
@@ -218,7 +231,7 @@ class Order extends BaseController
         $xpay = $xpayment->createInvoice($params);
 
         // Insert into table payment
-        $pay['trans_id'] = $data['orderId'];
+        $pay['order_id'] = $data['orderId'];
         $pay['data_id'] = $xpay['id'];
         $pay['external_id'] = $xpay['external_id'];
         $pay['amount'] = $xpay['amount'];

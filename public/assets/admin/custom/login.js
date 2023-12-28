@@ -1,5 +1,4 @@
 "use strict";
-var baseUrl = window.location.protocol + '//' + window.location.hostname + '/webchat';
 
 var KTSigninGeneral = (function () {
     var e, t, i;

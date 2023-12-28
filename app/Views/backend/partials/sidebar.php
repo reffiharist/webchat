@@ -81,6 +81,17 @@
 				<!--end:Menu item-->
 
 				<!--begin:Menu item-->
+				<div class="menu-item">
+					<a class="menu-link <?=activeMenu(uri_segment(3), 'faq')?>" href="<?=site_url('backend/faq')?>">
+						<span class="menu-icon">
+							<?=svgIcon('icons/duotune/general/gen029.svg', 'svg-icon svg-icon-2')?>
+						</span>
+						<span class="menu-title">FAQ</span>
+					</a>
+				</div>
+				<!--end:Menu item-->
+
+				<!--begin:Menu item-->
 				<div data-kt-menu-trigger="click" class="menu-item menu-accordion <?=activeMenu(uri_segment(3), ['about', 'usecase'], 'hover show')?>">
 					<span class="menu-link">
 						<span class="menu-icon">

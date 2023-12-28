@@ -46,7 +46,7 @@
 							<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="<?=site_url('backend/home')?>" action="#">
 								<div class="text-center mb-11">
 									<h1 class="text-dark fw-bolder mb-3">Sign In</h1>
-									<div class="text-gray-500 fw-semibold fs-6">Your Administrator System</div>
+									<div class="text-gray-500 fw-semibold fs-6">Your Webchat Application</div>
 								</div>
 								<div class="fv-row mb-8">
 									<input type="text" placeholder="Email" name="email" autocomplete="off" class="form-control bg-transparent" required />
@@ -81,6 +81,7 @@
 		<!--end::Root-->
 
 		<script>var hostUrl = "assets/";</script>
+		<script>var baseUrl = "<?=base_url()?>";</script>
 		<script src="<?=base_url('public/assets/admin/plugins/global/plugins.bundle.js')?>"></script>
 		<script src="<?=base_url('public/assets/admin/js/scripts.bundle.js')?>"></script>
 		<script src="<?=base_url('public/assets/admin/custom/login.js')?>"></script>

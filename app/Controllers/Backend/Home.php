@@ -10,6 +10,10 @@ class Home extends BaseController
     {
         $data['page'] = "home/view";
         $data['pageTitle'] = "Dashboard";
+        $data['script'] = [
+            script_tag('public/assets/admin/custom/dashboard.js'),
+            script_tag('public/assets/admin/js/custom/widgets.js')
+        ];
 
         return view('backend', $data);
     }

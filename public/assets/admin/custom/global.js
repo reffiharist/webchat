@@ -1,7 +1,5 @@
 "use strict";
 
-var baseUrl = window.location.protocol + '//' + window.location.hostname + '/webchat';
-
 function reloadTable() {
     tableData.ajax.reload(null,false);
 }

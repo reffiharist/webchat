@@ -88,7 +88,7 @@ class Xpayment
 		    'fees' => [
 		        [
 		            'type' => 'ADMIN',
-		            'value' =>  $data['fee']
+		            'value' => (int)$data['fee']
 		        ]
 		    ]
 		];

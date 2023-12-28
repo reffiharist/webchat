@@ -2,7 +2,6 @@
 
 var tableData;
 var save_method;
-var baseUrl = window.location.protocol + '//' + window.location.hostname + '/webchat';
 
 function tableData() {
 	tableData = $('#dataTable').DataTable( {
