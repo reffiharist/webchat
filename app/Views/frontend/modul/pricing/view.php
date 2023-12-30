@@ -5,7 +5,6 @@
 	</div>
 </div>
 
-
 <section id="pricing">
 	<div class="container">
 		<div class="title-content center">
@@ -13,63 +12,60 @@
 			<p>Pilih paket sesuai kebutuhan anda</p>
 		</div>
 
-		<ul class="price-type ul nav">
-			<li>
-				<a class="active" href="#tab-personal" data-bs-toggle="tab">
-					<i class="bi bi-person"></i> Personal
-				</a>
-			</li>
-			<li>
-				<a href="#tab-company" data-bs-toggle="tab">
-					<i class="bi bi-building"></i> Company
-				</a>
-			</li>
-		</ul>
-
-		<div class="tab-content">
+		<div id="price-detail">
 			<?php foreach ($price as $d): ?>
-				<?php $active = $d['price']['key'] == 'personal' ? 'show active' : ''; ?>
-				<div class="tab-pane fade <?=$active?>" id="tab-<?=$d['price']['key']?>">
-					<div class="wrap-box-price">
+				<div class="section-price">
+					<h2 class="title-price"><?=$d['price']['key']?></h2>
+					<div class="wrap-price">
 						<?php foreach ($d['package'] as $p): ?>
 							<?php $lists = explode(',', $p->package_desc); ?>
-							<div class="box-price">
-								<div class="box-price-header">
+							<div class="item-price">
+								<div class="box-title-price">
 									<h3><?=$p->package_name?></h3>
+									<h4><sup>IDR</sup> <?=angka($p->package_price)?> <span>/bulan</span></h4>
 								</div>
-								<div class="box-price-price">
-									<h3><sup>IDR</sup> <?=angka($p->package_price)?> <span>/bulan</span></h3>
-								</div>
-								<div class="box-price-body">
+								<div class="box-content-price">
 									<ul>
 										<?php foreach ($lists as $key => $value): ?>
 											<li><?=$value?></li>
 										<?php endforeach ?>
 									</ul>
 								</div>
-								<div class="box-price-footer">
-									<!-- <a class="default-btn" href="http://my.webchat.id/register">Register Now</a> -->
+								<div class="box-action-price">
 									<a class="default-btn" href="<?=site_url('order/package/'.encrypt($p->package_id))?>">Register Now</a>
 								</div>
 							</div>
 						<?php endforeach ?>
 
-						<div class="box-price">
-							<div class="box-price-header">
+						<?php
+							$minPrice = null;
+							$maxPrice = null;
+							$listAddon = "";
+							foreach ($d['addon'] as $a) {
+								$listAddon .= "<li>".$a->addon_number." number +  ".angka($a->addon_message)." message Rp ".angka($a->addon_price)."</li>";
+
+								$priceAddon = $a->addon_price;
+
+							    if ($minPrice === null || $priceAddon < $minPrice) {
+							        $minPrice = $priceAddon;
+							    }
+
+								if ($maxPrice === null || $priceAddon > $maxPrice) {
+							        $maxPrice = $priceAddon;
+							    }
+							}
+						?>
+						<div class="item-price">
+							<div class="box-title-price">
 								<h3>Add On</h3>
+								<h4><sup>IDR</sup> <?=angka($minPrice)?> - <?=angka($maxPrice)?></h4>
 							</div>
-							<div class="box-price-price">
-								<h3><sup>IDR</sup> 50,000 - 125,000</h3>
-							</div>
-							<div class="box-price-body">
+							<div class="box-content-price">
 								<ul>
-									<?php foreach ($d['addon'] as $a): ?>
-									<li><?=$a->addon_number?> number + <?=angka($a->addon_message)?> message<br> Rp <?=angka($a->addon_price)?></li>
-									<?php endforeach ?>
+									<?=$listAddon?>
 								</ul>
-								<div class="mb-5"></div>
 							</div>
-							<div class="box-price-footer">
+							<div class="box-action-price">
 								<a class="default-btn" href="<?=site_url('contact')?>">Contact Us</a>
 							</div>
 						</div>

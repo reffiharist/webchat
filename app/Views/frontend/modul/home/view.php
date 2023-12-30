@@ -44,8 +44,6 @@
 	</div>
 </section>
 
-
-
 <section id="pricing">
 	<div class="container">
 		<div class="title-content center">

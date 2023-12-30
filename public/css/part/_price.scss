@@ -110,3 +110,70 @@
 		}
 	}
 }
+
+// DETAIL PRICE
+#price-detail{
+	margin-top: 50px;
+}
+.section-price{
+	margin-bottom: 50px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.title-price{
+	padding: 15px 0;
+	color: $third_color;
+	background: $brand_color;
+	text-align: center;
+	text-transform: capitalize;
+}
+.item-price{
+	@include flexbox();
+	@include justify-content(space-between);
+	@include align-items(center);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px dashed #000;
+	&:last-child{
+		// border-bottom: 5px solid $third_color;
+		border-bottom: none;
+	}
+}
+
+.box-title-price{
+	width: 400px;
+	h3{
+		margin-bottom: 15px;
+		font-size: 24px;
+	}
+	h4{
+		color: $third_color;
+		sup, span{
+			color: #989898;
+		}
+		span{
+			font-size: 16px;
+		}
+	}
+}
+.box-content-price{
+	@include flex-grow(1);
+	ul{
+		margin-bottom: 0;
+		li{
+			margin-bottom: 10px;
+			white-space: nowrap;
+			list-style: none;
+			&:before{
+				margin-right: 13px;
+				content: '\F4B5';
+				font-family: 'bootstrap-icons';
+				color: #13c4a1;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
