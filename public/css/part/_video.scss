@@ -178,6 +178,7 @@
 }
 .button-contact-video{
 	a{
+		display: inline-block;
 		background: $brand_color;
 		&:hover{
 			background: $third_color;
@@ -190,4 +191,41 @@
 			color: $third_color;
 		}
 	}
+}
+
+
+// ******************************************************************** //
+// Responsive Design ************************************************** //
+// ******************************************************************** //
+
+@media only screen and (max-width : 1399.98px) {
+	
+}
+
+@media only screen and (max-width : 1199.98px) {
+	
+}
+
+@media only screen and (max-width : 1024px) {
+	
+}
+
+@media only screen and (max-width : 991.98px) {
+	
+}
+
+@media only screen and (max-width : 767.98px) {
+	.contact-video{
+		@include flex-direction(column);
+	}
+	.content-contact-video{
+		text-align: center;
+	}
+	.button-contact-video{
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width : 575px) {
+	
 }

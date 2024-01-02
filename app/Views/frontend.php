@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?=base_url('public/bootstrap/css/bootstrap.min.css')?>">
     <link rel="stylesheet" href="<?=base_url('public/css/style.css')?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?=base_url('public/js/owl-carousel/assets/owl.carousel.min.css')?>">
 
     <script src="<?=base_url('public/js/jquery.min.js')?>"></script>
 </head>
@@ -16,7 +17,6 @@
     <?php echo $this->include('frontend/components/header'); ?>
     <?php echo $this->include('frontend/modul/'.$page); ?>
     <?php echo $this->include('frontend/components/footer'); ?>
-
-    <script src="<?=base_url('public/bootstrap/js/bootstrap.min.js')?>"></script>
+    <?php echo $this->include('frontend/components/script'); ?>
 </body>
 </html>

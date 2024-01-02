@@ -84,3 +84,44 @@
 		font-size: 18px;
 	}
 }
+
+// ******************************************************************** //
+// Responsive Design ************************************************** //
+// ******************************************************************** //
+
+@media only screen and (max-width : 1399.98px) {
+	.content-banner{
+		h2{
+			margin-bottom: 25px;
+			font-size: 40px;
+		}
+		p{
+			margin-bottom: 40px;
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+}
+
+@media only screen and (max-width : 1199.98px) {
+	.content-banner{
+		h2{
+			font-size: 32px;
+		}
+	}
+}
+
+@media only screen and (max-width : 1024px) {
+	.btn-banner{
+		line-height: 20px;
+		border: 2px solid $third_color;
+	}
+}
+
+@media only screen and (max-width : 991.8px) {
+	
+}
+
+@media only screen and (max-width : 575px) {
+	
+}

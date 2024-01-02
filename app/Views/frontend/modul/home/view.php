@@ -1,16 +1,15 @@
 <div id="banner">
 	<div class="bg-banner"></div>
 	<div class="container-fluid">
-		<div class="row align-items-center">
-			<div class="col-md-6">
+		<div class="row align-items-center justify-content-center justify-content-xl-start">
+			<div class="col-xl-6 d-none d-xl-block">
 				<div class="img-banner">
 					<img class="img" src="<?=base_url('public/images/chat-illustration.png')?>" alt="">
 				</div>
 			</div>
 
-			<div class="col-md-5">
+			<div class="col-xl-5 col-11">
 				<div class="content-banner">
-					<!-- <h2>Build your brand connecting with customers</h2> -->
 					<h2>Kirim pesan ke banyak nomor dengan mudah tinggal klik</h2>
 					<p>Mengirim pesan broadcast jadi lebih mudah dan kelola pesan berdasarkan kontak dengan admin pengguna tertentu, pesan jadi lebih private, serta fitur auto reply memberikan respon cepat kepada customer anda.</p>
 					<a class="default-btn btn-banner" href="http://my.webchat.id/register">Register now <i class="bi bi-arrow-right"></i></a>
@@ -68,7 +67,7 @@
 			<?php foreach ($price as $d): ?>
 				<?php $active = $d['price']['key'] == 'personal' ? 'show active' : ''; ?>
 				<div class="tab-pane fade <?=$active?>" id="tab-<?=$d['price']['key']?>">
-					<div class="wrap-box-price">
+					<div class="wrap-box-price owl-package owl-carousel">
 						<?php foreach ($d['package'] as $p): ?>
 							<?php $lists = explode(',', $p->package_desc); ?>
 							<div class="box-price">
